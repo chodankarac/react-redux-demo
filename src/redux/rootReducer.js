@@ -6,7 +6,7 @@ import pizzaReducer from "./pizza/pizzaReducer";
 const rootReducer = combineReducers({
   cake: cakeReducer,
   iceCream: iceCreamReducer,
-  pi: pizzaReducer,
+  pizza: pizzaReducer,
 });
 
 export default rootReducer;
