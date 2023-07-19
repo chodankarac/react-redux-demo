@@ -14,6 +14,7 @@ function CakeContainer(props) {
 
 const mapStateToProps = (state) => {
   //used for providing part of the state data from store to the components
+  //Reducer provide initial or updated state to store,when state in the store updates mapStateToProps gets called and it returns updated state value,which is accessed here state.cake.numOfCakes cause in rootReducer cake is the key and cakeReducer is the value
   return {
     numOfCakes: state.cake.numOfCakes,
   };
