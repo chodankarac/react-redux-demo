@@ -9,7 +9,7 @@ function NewCakeContainer(props) {
     <div>
       <h2>Number of cakes-{props.numOfCakes}</h2>
       <input type="text" value={number} onChange={(e) => setNumber(e.target.value)} />
-      <button onClick={() => props.buyCake(number)}>Buy {number} Cakes</button>
+      <button onClick={() => props.buyCakes(number)}>Buy {number} Cakes</button>
     </div>
   );
 }
@@ -25,7 +25,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   //used for dispatching action to store
   return {
-    buyCake: (number) => dispatch(buyCake(number)),
+    buyCakes: (number) => dispatch(buyCake(number)),
   };
 };
 export default connect(mapStateToProps, mapDispatchToProps)(NewCakeContainer); //connect is used to connect store to the component,(connect takes two arguments mapStateToProps, mapDispatchToProps)
