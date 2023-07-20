@@ -5,7 +5,6 @@ const initialState = {
 };
 
 const pizzaReducer = (state = initialState, action) => {
-  console.log("inside pizzaReducer");
   switch (action.type) {
     case BUY_PIZZA:
       return {

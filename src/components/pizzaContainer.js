@@ -18,7 +18,6 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-  console.log("inside dispatch function");
   return {
     buyPizza: () => dispatch(buyPizza()),
   };
