@@ -6,7 +6,7 @@ const initialState = {
   error: "",
 };
 
-export const userReducer = (state = initialState, action) => {
+const userReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_USERS_REQUEST:
       return {
@@ -30,3 +30,5 @@ export const userReducer = (state = initialState, action) => {
       return state;
   }
 };
+
+export default userReducer;
